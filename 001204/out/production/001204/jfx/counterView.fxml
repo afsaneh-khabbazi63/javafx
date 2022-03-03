@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:controller="jfx.Counter" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+      alignment="TOP_CENTER" maxHeight="646.0" maxWidth="615.0" minHeight="646.0" minWidth="615.0" prefHeight="646.0" prefWidth="615.0">
+   <children >
+      <ToolBar maxHeight="52.0" maxWidth="615.0" minHeight="52.0" minWidth="615.0" prefHeight="52.0" prefWidth="615.0">
+         <items>
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="46.0" prefWidth="194.0" text="Type Your Text Here" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="46.0" prefWidth="257.0" />
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="17.0" prefWidth="143.0" text="Press Esc  to Exit" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </items>
+      </ToolBar>
+      <TextArea fx:id="inputText" prefHeight="317.0" prefWidth="646.0" />
+      <Button fx:id="processButton" alignment="CENTER" contentDisplay="CENTER" maxHeight="30.0" maxWidth="110.0" minHeight="30.0" minWidth="110.0"
+              mnemonicParsing="false"   onAction="#onClick" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: darkslateblue; -fx-text-fill: white;" text="Process The Text">
+         <VBox.margin>
+            <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+         </VBox.margin>
+      </Button>
+      <Label fx:id="lines" maxWidth="575.0" minWidth="575.0" prefWidth="575.0" style="-fx-padding: 4px; -fx-font:
+       italic bold 16pt serif; -fx-background-color: white; -fx-text-fill: green;" text="Number Of Lines :">
+         <VBox.margin>
+            <Insets bottom="8.0" right="8.0" top="30.0" />
+         </VBox.margin>
+      </Label>
+      <Label fx:id="words" maxWidth="575.0" minWidth="575.0" prefWidth="575.0" style="-fx-padding: 4px; -fx-font:
+       italic bold 16pt serif; -fx-background-color: white; -fx-text-fill: red;" text="Number Of Words :">
+         <VBox.margin>
+            <Insets bottom="8.0" right="8.0" />
+         </VBox.margin>
+      </Label>
+      <Label fx:id="chars" maxWidth="575.0" minWidth="575.0" prefWidth="575.0" style="-fx-padding: 4px; -fx-font:
+       italic bold 16pt serif; -fx-background-color: white; -fx-text-fill: blue;" text="Number Of Chars:">
+         <VBox.margin>
+            <Insets bottom="8.0" right="8.0" />
+         </VBox.margin>
+      </Label>
+      <Label fx:id="digits" maxWidth="575.0" minWidth="575.0" prefWidth="575.0" style="-fx-padding: 4px;
+      -fx-font: italic bold 16pt serif; -fx-background-color: white; -fx-text-fill: black;" text="Number Of Digits :">
+         <VBox.margin>
+            <Insets bottom="8.0" right="8.0" />
+         </VBox.margin>
+      </Label>
+   </children>
+</VBox>
